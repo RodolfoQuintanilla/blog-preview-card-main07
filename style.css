@@ -1,0 +1,40 @@
+:root{
+   /*  ### Primary */
+
+--Yellow: hsl(47, 88%, 63%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Yellow);
+    font-size: 16px;
+}
+
+.card{
+    background-color: var(--White);
+    width: 380px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
+    margin-bottom: 30px;
+}
+
+
+
