@@ -1,40 +1,90 @@
-:root{
-   /*  ### Primary */
+:root {
+  /*  ### Primary */
 
---Yellow: hsl(47, 88%, 63%);
+  --Yellow: hsl(47, 88%, 63%);
 
-/* ### Neutral */
+  /* ### Neutral */
 
---White: hsl(0, 0%, 100%);
---Grey: hsl(0, 0%, 50%);
---Black: hsl(0, 0%, 7%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--Yellow);
-    font-size: 16px;
+@font-face {
+    font-family:"figtree" ;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
-.card{
-    background-color: var(--White);
-    width: 380px;
-    height: 100%;
-    border: 1px solid black;
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
-    box-shadow: 10px 10px 0 0px rgba(0,0,0,1);
-    margin-bottom: 30px;
+body {
+  background-color: var(--Yellow);
+  font-size: 16px;
+  font-family: "figtree";
+  font-weight: 500;
 }
 
+.card {
+  background-color: var(--White);
+  width: 380px;
+  height: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 0 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0 0px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 0 0px rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+}
 
+.card__img {
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 800;
+ 
+}
+
+.card__h1 {
+  background-color: var(--Yellow);
+  width: 90px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card__h2 {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
+.card__h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.card__h3:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.card__text {
+}
+
+.cad__avatar_container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.card__avatar {
+  width: 30px;
+  margin-right: 12px;
+}
 
